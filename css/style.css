@@ -14,7 +14,6 @@
 body {
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	padding-top: 88px;
 }
 .textarea {
@@ -22,19 +21,59 @@ body {
 	width: 720px;
 	height: 288px;
 	background-color:#F8F8F8;
-	border-color: 2px solid #E8E8E8;
+	border: 2px solid #E8E8E8;
 	margin-top: 50px;
+	padding: 16px;
+
 }
-textarea::placeholder {
+textarea::placeholder,
+input::placeholder {
 	color: #CECECE;
 	font-size: 13px;
 	font-family: 'Poppins Regular', sans-serif;
 	margin-top: 20px;
 	margin-left: 20px;
 }
+
+input:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+}
 .div-wraper {
 	display: inline-block;
+
 }
 .input {
 	margin-top: 16px;
+	width: 352px;
+	height: 60px;
+	background-color:#F8F8F8;
+	border: 2px solid #E8E8E8;
+	margin-left: 16px;
+	padding: 16px;
+}
+input[type=text] {
+	color: #181818;
+	font-size: 13px;
+	font-family: 'Poppins Regular', sans-serif;
+}
+.Submit {
+	margin-top: 16px;
+	width: 352px;
+	height: 60px;
+	background-color:#5863F8;
+	border: 2px solid #E8E8E8;
+	color: white;
+	font-family: 'Poppins Regular', sans-serif;
+	font-size: 14px;
+	margin-left: 16px;
+}
+.form-wraper {
+	display: flex;
+	align-items: center;
+
+}
+.Subject {
+	margin-top: 50px;
 }
